@@ -13,7 +13,7 @@ export class VideoService {
 
   fetchVideos(query: string) {
     return this.http
-      .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}`+
+      .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UClwB0izppqTcuPcFvNO5zHQ&q=${query}`+
           '&maxResults=50' +
           '&type=video' +
           '&key=AIzaSyAARhzDEdAwaIYKelgTmVa8Nez5sLKjBcM')
